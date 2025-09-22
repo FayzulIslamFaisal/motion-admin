@@ -46,6 +46,12 @@ export default function DashboardPage() {
 
     loadDashboardData()
   }, [])
+  console.log("stats:", stats);
+  console.log("revenueData:", revenueData);
+  console.log("userGrowthData:", userGrowthData);
+  console.log("categoryData:", categoryData);
+
+
 
   return (
     <DashboardLayout>

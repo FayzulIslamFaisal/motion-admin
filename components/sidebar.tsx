@@ -65,7 +65,7 @@ export function Sidebar({ className }: SidebarProps) {
           </div>
           <div>
             <h1 className="text-lg font-semibold text-sidebar-foreground">Admin Panel</h1>
-            <p className="text-xs text-muted-foreground">Business Dashboard</p>
+            <p className="text-xs text-muted-foreground">Motion Admin Dashboard</p>
           </div>
         </div>
       </div>
