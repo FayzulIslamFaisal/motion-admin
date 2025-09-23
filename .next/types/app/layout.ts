@@ -1,4 +1,4 @@
-// File: /Users/md.faisal/Desktop/js-project-folder/motion-admin/app/layout.tsx
+// File: G:\React\Nextjs\motion-admin\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

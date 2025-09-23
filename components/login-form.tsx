@@ -33,7 +33,7 @@ export function LoginForm() {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-bold text-primary">Welcome Back</CardTitle>
-          <CardDescription>Sign in to your admin dashboard</CardDescription>
+          <CardDescription>Sign in to Motion admin dashboard</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -64,7 +64,7 @@ export function LoginForm() {
                 <AlertDescription>{error}</AlertDescription>
               </Alert>
             )}
-            <Button type="submit" className="w-full" disabled={isLoading}>
+            <Button type="submit" className="w-full cursor-pointer" disabled={isLoading}>
               {isLoading ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -77,8 +77,8 @@ export function LoginForm() {
           </form>
           <div className="mt-4 text-sm text-muted-foreground text-center">
             <p>Demo credentials:</p>
-            <p>Admin: admin@example.com / password</p>
-            <p>User: user@example.com / password</p>
+            <p><strong>Admin</strong>: admin@example.com / password</p>
+            <p><strong>User</strong>: user@example.com / password</p>
           </div>
         </CardContent>
       </Card>

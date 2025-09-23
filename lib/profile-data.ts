@@ -69,7 +69,6 @@ const mockProfile: ProfileData = {
 export const fetchProfile = async (): Promise<ProfileData> => {
   await new Promise((resolve) => setTimeout(resolve, 600))
 
-  // In a real app, this would fetch from the current user's session
   const storedUser = localStorage.getItem("user")
   if (storedUser) {
     const user = JSON.parse(storedUser)
@@ -89,7 +88,6 @@ export const fetchProfile = async (): Promise<ProfileData> => {
 export const updateProfile = async (profileData: UpdateProfileData): Promise<ProfileData> => {
   await new Promise((resolve) => setTimeout(resolve, 800))
 
-  // Update localStorage user data
   const storedUser = localStorage.getItem("user")
   if (storedUser) {
     const user = JSON.parse(storedUser)
@@ -116,7 +114,6 @@ export const updateNotificationSettings = async (settings: NotificationSettings)
 export const updatePassword = async (securityData: SecuritySettings): Promise<void> => {
   await new Promise((resolve) => setTimeout(resolve, 1000))
 
-  // In a real app, this would validate the current password and update it
   if (securityData.newPassword !== securityData.confirmPassword) {
     throw new Error("Passwords do not match")
   }

@@ -156,6 +156,7 @@ export default function UsersPage() {
       throw error
     }
   }
+console.log("users page rendered", users);
 
   return (
     <DashboardLayout>

@@ -1,4 +1,4 @@
-// File: /Users/md.faisal/Desktop/js-project-folder/motion-admin/app/dashboard/page.tsx
+// File: G:\React\Nextjs\motion-admin\app\dashboard\page.tsx
 import * as entry from '../../../../app/dashboard/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

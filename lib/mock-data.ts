@@ -50,7 +50,7 @@ export const categoryData: ChartData[] = [
   { name: "Sports", value: 5 },
 ]
 
-// Mock API functions
+//********/ Mock API functions *******//
 export const fetchDashboardStats = async (): Promise<DashboardStats> => {
   await new Promise((resolve) => setTimeout(resolve, 800))
   return dashboardStats

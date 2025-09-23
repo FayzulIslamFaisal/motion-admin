@@ -11,7 +11,6 @@ export interface AuthState {
   isLoading: boolean
 }
 
-// Mock users for demonstration
 const mockUsers: User[] = [
   {
     id: "1",
@@ -30,7 +29,6 @@ const mockUsers: User[] = [
 ]
 
 export const login = async (email: string, password: string): Promise<User> => {
-  // Simulate API call
   await new Promise((resolve) => setTimeout(resolve, 1000))
 
   const user = mockUsers.find((u) => u.email === email)
@@ -38,7 +36,7 @@ export const login = async (email: string, password: string): Promise<User> => {
     throw new Error("Invalid credentials")
   }
 
-  // Store in localStorage for persistence
+
   localStorage.setItem("user", JSON.stringify(user))
   return user
 }

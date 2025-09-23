@@ -159,18 +159,16 @@ export function UsersTable({ users, onEdit, onDelete, onSort, sortField, sortOrd
               <TableCell>
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" className="h-8 w-8 p-0">
-                      <MoreHorizontal className="h-4 w-4" />
-                    </Button>
+                      <MoreHorizontal className="h-6 w-6" />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem onClick={() => onEdit(user)}>
-                      <Edit className="mr-2 h-4 w-4" />
+                    <DropdownMenuItem onClick={() => onEdit(user)} className="cursor-pointer">
+                      <Edit className="mr-2 h-4 w-4 cursor-pointer" />
                       Edit
                     </DropdownMenuItem>
                     {currentUser?.role === "admin" && user.id !== currentUser.id && (
-                      <DropdownMenuItem onClick={() => onDelete(user.id)} className="text-destructive">
-                        <Trash2 className="mr-2 h-4 w-4" />
+                      <DropdownMenuItem onClick={() => onDelete(user.id)} className="text-destructive cursor-pointer">
+                        <Trash2 className="mr-2 h-4 w-4 cursor-pointer" />
                         Delete
                       </DropdownMenuItem>
                     )}
