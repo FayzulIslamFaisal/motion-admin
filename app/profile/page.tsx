@@ -157,10 +157,10 @@ export default function ProfilePage() {
               <User className="h-4 w-4" />
               <span>Profile</span>
             </TabsTrigger>
-            <TabsTrigger value="notifications" className="flex items-center space-x-2">
+            {/* <TabsTrigger value="notifications" className="flex items-center space-x-2">
               <Bell className="h-4 w-4" />
               <span>Notifications</span>
-            </TabsTrigger>
+            </TabsTrigger> */}
             <TabsTrigger value="security" className="flex items-center space-x-2">
               <Shield className="h-4 w-4" />
               <span>Security</span>
