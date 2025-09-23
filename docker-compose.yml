@@ -1,0 +1,13 @@
+services:
+  motion-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nextjs-dashboard:motion-dashboard
+    container_name: motion-dashboard-container
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: ["npm", "run", "dev"]
