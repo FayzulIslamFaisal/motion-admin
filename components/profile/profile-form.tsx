@@ -47,6 +47,8 @@ export function ProfileForm({ profile, onSubmit }: ProfileFormProps) {
     // In a real app, this would open a file picker or avatar selection modal
     const newAvatar = `/placeholder.svg?height=80&width=80&query=professional+avatar+${Date.now()}`
     setFormData({ ...formData, avatar: newAvatar })
+    alert("Avatar changed! In a real app, this would open a file picker or avatar selection modal.")
+    
   }
 
   return (
