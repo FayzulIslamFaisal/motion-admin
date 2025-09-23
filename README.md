@@ -12,3 +12,25 @@ This project demonstrates authentication, protected routes, role-based UI, CRUD 
  Profile Page – Update user profile 
  Role-Based UI – Different views for Admin and Normal User.
  Dockerized Application – Run easily with Docker for consistent environment setup.
+
+ #Tech Stack
+
+Framework: Next.js
+Language: TypeScript / JavaScript
+Styling: Tailwind CSS
+UI Components: Shadcn UI
+Charts: BarChart, LineChart, PieChart
+State Management: React Hooks / Context API
+Auth: Custom Hook
+Mock API: custom mock data
+Containerization: Docker & Docker Compose
+
+#Getting Started 
+git clone https://github.com/FayzulIslamFaisal/motion-admin.git
+#Install dependencies (without Docker)
+npm install
+npm run dev
+
+#Run with Docker
+docker-compose up --build
+
